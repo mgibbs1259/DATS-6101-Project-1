@@ -1,5 +1,5 @@
 ---
-title: "Education Expenditure and Test Scores"
+title: "Education Expenditure and Math Scores"
 authors: Mary Gibbs and Rayhaan Rasheed
 output: html_notebook
 editor_options: 
