@@ -1,16 +1,6 @@
-# Project 1<br/>
-DATS 6101 Introduction to Data Science<br/>
-Mary Gibbs and Rayhaan Rasheed
-
-## Overview
-This project explores an education data set conatining 2 different files. The first dataset contains revenues and expenditures pertaining to education for every state in America. The second dataset loked at each school district and in America and showed their average test scores for Mathematics and Reading for 4th and 8th grade. 
-
-## Objective
-This project was assigned for our group to fully understand what steps should be taken for a proper exploratory data analysis(EDA). We merged the two data sets together to create a fianl dataframe that conatined the Total Revenue, Total Expenditure, and Average Test Scores for each state for the past 10 years. Our group focused on the relationship between the money a state spends on education and the average math test scores. 
-
-## Methods
-* EDA
-* Model
-
-## Data
-The data comes from https://www.kaggle.com/noriuk/us-educational-finances
+# Education Expenditure and Math Scores
+## Authors: Mary Gibbs and Rayhaan Rasheed
+### Objective 
+The objective of this project is to determine if there a significant relationship between school expenditure and 4th/8th grade average math scores in the U.S. from 2005 to 2015.
+### Data Source
+The data for this project comes from [U.S. Educational Expenses on Kaggle](https://www.kaggle.com/noriuk/us-educational-finances)
