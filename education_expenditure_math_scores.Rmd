@@ -110,9 +110,10 @@ df_sum_tr_minus_te <- aggregate(list(df$tr_minus_te), by = list(df$year), FUN = 
 colnames(df_sum_tr_minus_te) <- c("year", "sum_total_revenue-total_expenditure")
 df_sum_tr_minus_te <- melt(df_sum_tr_minus_te, id.vars = "year")
 #line plot of sum of total revenue - total expenditure from 2005-2015
+#Profit - Total Revenue - Total Expenditure ----> π = TR-TE
 ggplot(df_sum_tr_minus_te, aes(x = year, y = value, group = variable, colour = variable)) +
       geom_line() + 
-      ggtitle ("Sum of Total Revenue - Total Expenditure") +
+      ggtitle ("Profit from 2005-2015") +
       theme(plot.title = element_text(hjust = 0.5)) +
       xlab("Year") +
       ylab("USD") + 
@@ -268,7 +269,7 @@ lm_df_8_te <- lm(avg_score ~ total_expenditure, data = df_8)
 summary(lm_df_8_te)
 #residuals - not normally distributed
 #coefficients - total_expenditure p-value < 0.05, relationship between school expenditure and 8th grade average math scores
-#multiple R-squared - 3.59% of the variance in 8th grade average math scores can be explained by school expenditure, poor model
+#adjusted R-squared - 3.59% of the variance in 8th grade average math scores can be explained by school expenditure, poor model
 
 #assumptions
 par(mfrow = c(2, 2))
